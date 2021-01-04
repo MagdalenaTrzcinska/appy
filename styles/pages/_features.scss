@@ -1,0 +1,123 @@
+article.features {
+
+  .features__section {
+    margin-top: 10%;
+    background-color: #6c9cfb;
+
+    @include header(74px);
+    @include styleH;
+
+    .title {
+      margin-top: 5%;
+      left: calc(50% - 37px);
+      color: white;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        height: 1px;
+        width: 40px;
+        background-color: #c3c3c3;
+        border-radius: 50%;
+      }
+
+
+      &:before {
+        left: -50px;
+      }
+
+      &:after {
+        right: -50px;
+      }
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .q {
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;
+      display: grid;
+      grid-template-columns: 1.5fr 1.5fr 1.5fr;
+      grid-template-rows: 18vh 18vh 18vh;
+      grid-auto-flow: column;
+      justify-content: center;
+
+      @media #{$theLargerWidth} {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media #{$smallWidth} {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
+      }
+
+      .single {
+        background-color: yellow;
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+
+        div {
+          display: inline-block;
+          margin-top: 23%;
+          height: 70px;
+          width: 70px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 85px;
+
+          i {
+            color: #6c9cfb;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .u {
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end: last;
+        height: 70vh;
+        width: 80%;
+        margin-left: 10%;
+        top: 100px;
+
+        @media (max-width: 1400px) {
+          top: 0;
+          height: 90%;
+        }
+
+
+        @media #{$theLargerWidth} {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+

@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/779fb9daaa.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
-<div class="header">
+<header>
     <div class="header__photo">
         <img src="office-1209640__480.jpg">
     </div>
     <div class="menu-desktop menu">
         <div class="logo">
-            <div class="a">a</div>
+            <div class="logo-icon">a</div>
             appy
         </div>
 
@@ -34,10 +37,9 @@
         <div class="signUp">SIGN UP</div>
     </div>
 
-
     <div class="menu-mobile menu">
         <div class="logo">
-            <div class="a">a</div>
+            <div class="logo-icon">a</div>
             appy
         </div>
 
@@ -53,18 +55,15 @@
             <li class="menu-single"><a href="#">Blog</a></li>
             <li class="menu-single"><a href="#">Contacts</a></li>
         </ul>
-
     </div>
 
-
-    <div class="b">
-        <div class="phone">
+    <div class="header__banner">
+        <div class="header__banner-phone">
             <img src="iphone-160307__480.png">
         </div>
 
-        <div class="text">
+        <div class="header__banner-text">
             <h1>Start your amazing stuff through appy.</h1>
-
             <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
                 laborused sed do eiusmod tempor incididunt ut labore et laborused.
             </div>
@@ -72,20 +71,149 @@
             <button>DOWNLOAD APP</button>
         </div>
     </div>
-</div>
+</header>
 
 
-<article>
-    <div class="a">a</div>
+<!--
+<article class="about">
+    <div class="about__section">
+        <div class="logo-icon">a</div>
 
-    <div class="about">ABOUT APPY</div>
+        <div class="title">ABOUT APPY</div>
+
+        <div class="article__text">A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            mollit anim id est laborum. Sedut perspiciatis unde omnis.
+
+            <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
+                laborused
+                sed do eiusmod tempor incididunt ut labore et laborused.
+            </div>
+        </div>
+    </div>
+
+    <div class="ourProgress">
+        <div class="ourProgress__text">
+            <div class="title">OUR PROGRESS</div>
+            <h3>Great Application Ever</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
+                laborused sed do eiusmod tempor incididunt ut labore et laborused.
+            </div>
+
+            <button>LEARN MORE</button>
+        </div>
+
+        <div class="ourProgress__phone">
+            <img src="iphone-160307__480.png">
+        </div>
+        <div class="p">
+            <img src="pexels-photo-583846.jpg">
+        </div>
+    </div>
+
+
+    <div class="videoFeatures">
+        <div class="videoFeatures__text">
+            <div class="title">VIDEO FEATURES</div>
+            <h3>Great Application Ever</h3>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
+                laborused sed do eiusmod tempor incididunt ut labore et laborused.
+            </div>
+
+            <button>LEARN MORE</button>
+        </div>
+
+        <div class="videoFeatures-photo">
+            <img src="office-1209640__480.jpg">
+        </div>
+        <iframe src="https://www.youtube.com/embed/jF8e-3KgdsU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+</article>
+
+
+<article class="features">
+    <div class="features__section">
+        <div class="title">FEATURES</div>
+        <h3>Powerful Features As Always</h3>
+
+        <div class="q">
+            <div class="single">
+                <div><i class="fas fa-rocket"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+
+            <div class="single">
+                <div><i class="fas fa-rocket"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+
+            <div class="single">
+                <div><i class="fas fa-rocket"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+
+
+            <div class="u">
+                <img src="iphone-160307__480.png">
+            </div>
+
+            <div class="single">
+                <div><i class="far fa-clock"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+
+            <div class="single">
+                <div><i class="fas fa-rocket"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+
+            <div class="single">
+                <div><i class="fas fa-rocket"></i></div>
+                <span>sdcfvgbhgvfd</span>
+            </div>
+        </div>
+    </div>
 
 
 </article>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+-->
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
+
+
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.aboutPage', {
+        reset: true,
+        delay: 300,
+        distance: 0
+    });
+    sr.reveal('.ourProgress', {
+        reset: true,
+        delay: 300,
+        scale: 0.85
+    });
+    sr.reveal('.videoFeatures', {
+        reset: true,
+        delay: 300,
+        rotate: {
+            x: 20,
+            z: 20
+        }
+    });
+    sr.reveal('.features__section', {
+        reset: true,
+        delay: 300,
+        rotate: {
+            x: 40,
+            z: 40
+        }
+    });
+</script>
 
 </body>
 </html>

@@ -1,0 +1,63 @@
+@mixin logo-icon($display, $color, $bcg-color) {
+  .logo-icon {
+    display: $display;
+    color: $color;
+    background-color: $bcg-color;
+    font-family: "Shadows Into Light", serif;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+}
+
+@mixin styleH {
+  h3 {
+    font-size: 30px;
+  }
+}
+
+@mixin header($width) {
+  .title {
+    width: $width;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: #878787;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+}
+
+@mixin styleText {
+  h3 + div {
+    word-spacing: 2px;
+    margin-top: 2%;
+    color: gray;
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+
+@mixin button {
+  button {
+    top: 0;
+    position: relative;
+    margin-top: 5%;
+    width: 150px;
+    height: 55px;
+    border-radius: 30px;
+    border: 0;
+    letter-spacing: 1px;
+    color: white;
+    background-image: linear-gradient(-135deg, rgb(71, 129, 230), rgb(27, 20, 166));
+    font-weight: bolder;
+    font-size: 13px;
+    transition: all 0.5s linear;
+
+    &:hover {
+      -webkit-box-shadow: 7px 14px 50px -1px #BABABA;
+      box-shadow: 7px 14px 50px -1px #BABABA;
+      top: -5px;
+    }
+  }
+}

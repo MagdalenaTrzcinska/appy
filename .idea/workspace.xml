@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f06711ef-2d47-48db-9ba1-1ec3772edd03" name="Default Changelist" comment="" />
+    <list default="true" id="f06711ef-2d47-48db-9ba1-1ec3772edd03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/base/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/layout/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/layout/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/layout/_navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_contacts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_faq.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_features.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_gallery.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/_pricing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/folder bez nazwy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/folder bez nazwy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +50,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -36,6 +65,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -46,6 +76,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/abstracts" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,6 +101,12 @@
       <workItem from="1608786209429" duration="8169000" />
       <workItem from="1608875600644" duration="4169000" />
       <workItem from="1608917610399" duration="4927000" />
+      <workItem from="1609070746871" duration="1020000" />
+      <workItem from="1609135337698" duration="9960000" />
+      <workItem from="1609182875899" duration="2287000" />
+      <workItem from="1609220682644" duration="12887000" />
+      <workItem from="1609253975353" duration="3384000" />
+      <workItem from="1609752842956" duration="4851000" />
     </task>
     <servers />
   </component>
@@ -77,6 +118,10 @@
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
     <state x="866" y="259" key="#Inspections/0.23.1920.1119@0.23.1920.1119" timestamp="1608637425536" />
+    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609229042505">
+      <screen x="0" y="23" width="1920" height="1119" />
+    </state>
+    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1609229042505" />
     <state x="31" y="156" key="FileDocumentManager.FileCacheConflict" timestamp="1608640572727">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
@@ -85,9 +130,9 @@
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
     <state x="922" y="222" key="SettingsEditor/0.23.1920.1119@0.23.1920.1119" timestamp="1608918179425" />
-    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog" timestamp="1608917610411">
+    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog" timestamp="1609752871672">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
-    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1608917610411" />
+    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1609752871672" />
   </component>
 </project>
