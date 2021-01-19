@@ -4,6 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   height: 200vh;
+  user-select: none;
 }
 
 a {
@@ -16,7 +17,12 @@ ul li {
   display: inline-block;
 }
 
-
-.display {
+.up {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  font-size: 40px;
+  z-index: 5;
+  color: rgba(21, 16, 109, 1);
   display: none;
 }

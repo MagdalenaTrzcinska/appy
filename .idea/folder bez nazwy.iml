@@ -7,5 +7,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="scrollreveal" level="application" />
+    <orderEntry type="library" name="splide" level="application" />
+    <orderEntry type="library" name="779fb9daaa" level="application" />
   </component>
 </module>

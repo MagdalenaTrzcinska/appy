@@ -1,0 +1,7 @@
+{
+  "name": "appy",
+  "version": "1.0.0",
+  "dependencies": {
+    "swiper": "^6.4.5"
+  }
+}

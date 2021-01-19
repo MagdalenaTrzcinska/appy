@@ -2,31 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06711ef-2d47-48db-9ba1-1ec3772edd03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/base/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/components/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/layout/_navigation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_contacts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_faq.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_features.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_gallery.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/pages/_pricing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/folder bez nazwy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/folder bez nazwy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone-160307__480.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/office-1209640__480.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pexels-photo-583846.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/layout/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/layout/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_contacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_gallery.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_pricing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_pricing.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -75,6 +79,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -106,7 +111,37 @@
       <workItem from="1609182875899" duration="2287000" />
       <workItem from="1609220682644" duration="12887000" />
       <workItem from="1609253975353" duration="3384000" />
-      <workItem from="1609752842956" duration="4851000" />
+      <workItem from="1609752842956" duration="10331000" />
+      <workItem from="1609771443690" duration="850000" />
+      <workItem from="1609785682969" duration="1544000" />
+      <workItem from="1609825089214" duration="11578000" />
+      <workItem from="1609844394290" duration="2961000" />
+      <workItem from="1609866377423" duration="4894000" />
+      <workItem from="1609911650981" duration="8319000" />
+      <workItem from="1609937452425" duration="455000" />
+      <workItem from="1609938064081" duration="1948000" />
+      <workItem from="1609998282508" duration="6526000" />
+      <workItem from="1610007530184" duration="2818000" />
+      <workItem from="1610010688227" duration="350000" />
+      <workItem from="1610020213646" duration="838000" />
+      <workItem from="1610084150559" duration="6539000" />
+      <workItem from="1610219794138" duration="2262000" />
+      <workItem from="1610346739435" duration="1307000" />
+      <workItem from="1610348265953" duration="5000" />
+      <workItem from="1610348967753" duration="463000" />
+      <workItem from="1610361638221" duration="4240000" />
+      <workItem from="1610384757086" duration="4854000" />
+      <workItem from="1610455050971" duration="5085000" />
+      <workItem from="1610515002635" duration="3367000" />
+      <workItem from="1610603713978" duration="2473000" />
+      <workItem from="1610606669803" duration="2005000" />
+      <workItem from="1610868344453" duration="167000" />
+      <workItem from="1610868514347" duration="10488000" />
+      <workItem from="1610946442279" duration="6687000" />
+      <workItem from="1610980767935" duration="2303000" />
+      <workItem from="1610984988520" duration="68000" />
+      <workItem from="1610985059956" duration="195000" />
+      <workItem from="1610985278367" duration="1634000" />
     </task>
     <servers />
   </component>
@@ -114,14 +149,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="866" y="259" key="#Inspections" timestamp="1608637425536">
+    <state x="866" y="259" key="#Inspections" timestamp="1610221695870">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
-    <state x="866" y="259" key="#Inspections/0.23.1920.1119@0.23.1920.1119" timestamp="1608637425536" />
-    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609229042505">
+    <state x="866" y="259" key="#Inspections/0.23.1920.1119@0.23.1920.1119" timestamp="1610221695870" />
+    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610455796136">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
-    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1609229042505" />
+    <state x="1199" y="336" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1610455796136" />
     <state x="31" y="156" key="FileDocumentManager.FileCacheConflict" timestamp="1608640572727">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
@@ -130,9 +165,13 @@
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
     <state x="922" y="222" key="SettingsEditor/0.23.1920.1119@0.23.1920.1119" timestamp="1608918179425" />
-    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog" timestamp="1609752871672">
+    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog" timestamp="1610985278439">
       <screen x="0" y="23" width="1920" height="1119" />
     </state>
-    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1609752871672" />
+    <state x="1053" y="426" key="com.intellij.ide.util.TipDialog/0.23.1920.1119@0.23.1920.1119" timestamp="1610985278439" />
+    <state x="0" y="23" width="960" height="599" key="dock-window-1" timestamp="1610868704805">
+      <screen x="0" y="23" width="1920" height="1119" />
+    </state>
+    <state x="0" y="23" width="960" height="599" key="dock-window-1/0.23.1920.1119@0.23.1920.1119" timestamp="1610868704805" />
   </component>
 </project>

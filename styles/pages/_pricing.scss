@@ -1,0 +1,145 @@
+@include styleH;
+
+.pricing {
+  .pricing__fraction {
+    margin-top: 10%;
+
+    @include header(110px, true, true);
+
+    .title {
+      margin-top: 5%;
+      left: calc(50% - 55px);
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+    }
+
+    .pricingPlan {
+      display: flex;
+      height: 55vh;
+      margin: 7% auto;
+      width: 60%;
+      max-width: 1150px;
+      align-items: center;
+      justify-content: space-between;
+
+      @media #{$theLargerWidth} {
+        width: 80%;
+      }
+
+      @media #{$smallWidth} {
+        flex-direction: column;
+        height: 200vh;
+        width: 90%;
+      }
+
+      &_single {
+        width: 31%;
+        height: 100%;
+        -webkit-box-shadow: 0px 0px 28px 4px rgba(112, 105, 114, 0.41);
+        box-shadow: 0px 0px 28px 4px rgba(112, 105, 114, 0.41);
+
+        @media #{$smallWidth} {
+          width: 100%;
+          height: 32%
+        }
+
+        &:hover {
+          -webkit-box-shadow: 0px 0px 20px 5px rgba(90,129,191,0.81);
+          box-shadow: 0px 0px 20px 5px rgba(90,129,191,0.81);
+
+          .single-main {
+            background: linear-gradient(45deg, #41265b, #2e32ad, #6f9bef);
+
+            i {
+              color: white;
+            }
+
+            h6 {
+              color: white;
+            }
+          }
+        }
+
+        .single-main {
+          position: relative;
+          background-color: #edecf4;
+          width: 100%;
+          height: 35%;
+          transition: .3s linear;
+
+          i {
+            position: absolute;
+            left: 50%;
+            top: calc(50% - 30px);
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: #{$lighter-color};
+            transition: .3s linear;
+
+          }
+
+          h6 {
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+            position: absolute;
+            left: 50%;
+            top: calc(50% + 30px);
+            transform: translate(-50%, -50%);
+            color: #{$lighter-color};
+            transition: .3s linear;
+          }
+        }
+
+        .single-info {
+          text-align: center;
+          color: gray;
+          width: 170px;
+          margin-top: 40px;
+          margin-left: calc((100% - 170px) /2);
+          line-height: 2;
+
+          .price {
+            color: #{$lighter-color};
+            font-size: 60px;
+
+            sup {
+              font-size: 30px;
+            }
+
+            sub {
+              font-size: 18px;
+            }
+          }
+
+          button.purchase {
+            margin-top: 20px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-size: 13px;
+            width: 180px;
+            height: 60px;
+            font-weight: bolder;
+            color:  #{$lighter-color};
+            border: solid 2px transparent;
+            background-image: linear-gradient(-135deg, rgb(71, 129, 230), rgb(27, 20, 166)), linear-gradient(-135deg, rgb(71, 129, 230), rgb(27, 20, 166));
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            box-shadow: 1px 1000px 1px #fff inset;
+            transition: 0.2s linear;
+
+
+            &:hover {
+              color: white;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

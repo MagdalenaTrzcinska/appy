@@ -7,81 +7,76 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/779fb9daaa.js" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
-<header>
-    <div class="header__photo">
-        <img src="office-1209640__480.jpg">
+<span class="up">
+    <i class="fas fa-long-arrow-alt-up"></i>
+</span>
+
+<header class="home">
+    <div class="home__bcg">
+        <img src="img/banner.jpg">
     </div>
-    <div class="menu-desktop menu">
-        <div class="logo">
+
+    <nav class="menu">
+        <div class="menu__logo">
             <div class="logo-icon">a</div>
             appy
         </div>
+        <div class="menu-desktop">
+            <ul class="navigation">
+                <li class="navigation__item active"><a>Home</a></li>
+                <li class="navigation__item"><a>About</a></li>
+                <li class="navigation__item"><a>Features</a></li>
+                <li class="navigation__item"><a>Pricing</a></li>
+                <li class="navigation__item"><a>FAQ</a></li>
+                <li class="navigation__item"><a>Contacts</a></li>
+            </ul>
 
-        <ul>
-            <li class="menu-single active"><a href="#">Home</a></li>
-            <li class="menu-single"><a href="#">About</a></li>
-            <li class="menu-single"><a href="#">Features</a></li>
-            <li class="menu-single"><a href="#">Gallery</a></li>
-            <li class="menu-single"><a href="#">Pricing</a></li>
-            <li class="menu-single"><a href="#">FAQ</a></li>
-            <li class="menu-single"><a href="#">Blog</a></li>
-            <li class="menu-single"><a href="#">Contacts</a></li>
-        </ul>
+            <div class="signUp">SIGN UP</div>
 
-        <div class="signUp">SIGN UP</div>
-    </div>
-
-    <div class="menu-mobile menu">
-        <div class="logo">
-            <div class="logo-icon">a</div>
-            appy
         </div>
 
-        <div class="bars"><i class="fas fa-bars"></i></div>
+        <nav class="menu-mobile">
+            <div class="bars"><i class="fas fa-bars"></i></div>
 
-        <ul class="mobile display">
-            <li class="menu-single active"><a href="#">Home</a></li>
-            <li class="menu-single"><a href="#">About</a></li>
-            <li class="menu-single"><a href="#">Features</a></li>
-            <li class="menu-single"><a href="#">Gallery</a></li>
-            <li class="menu-single"><a href="#">Pricing</a></li>
-            <li class="menu-single"><a href="#">FAQ</a></li>
-            <li class="menu-single"><a href="#">Blog</a></li>
-            <li class="menu-single"><a href="#">Contacts</a></li>
-        </ul>
-    </div>
+            <ul class="navigation">
+                <li class="navigation__item active"><a>Home</a></li>
+                <li class="navigation__item"><a>About</a></li>
+                <li class="navigation__item"><a>Features</a></li>
+                <li class="navigation__item"><a>Pricing</a></li>
+                <li class="navigation__item"><a>FAQ</a></li>
+                <li class="navigation__item"><a>Contacts</a></li>
+            </ul>
+        </nav>
+    </nav>
 
-    <div class="header__banner">
-        <div class="header__banner-phone">
-            <img src="iphone-160307__480.png">
+
+    <div class="home__banner">
+        <div class="home__banner-phone">
+            <img src="img/iphone.png">
         </div>
 
-        <div class="header__banner-text">
+        <div class="home__banner-text">
             <h1>Start your amazing stuff through appy.</h1>
             <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
                 laborused sed do eiusmod tempor incididunt ut labore et laborused.
             </div>
 
-            <button>DOWNLOAD APP</button>
+            <button type="button">DOWNLOAD APP</button>
         </div>
     </div>
 </header>
 
-
-<!--
-<article class="about">
-    <div class="about__section">
+<section class="about">
+    <article class="about__fraction">
         <div class="logo-icon">a</div>
 
         <div class="title">ABOUT APPY</div>
 
-        <div class="article__text">A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        <div class="about__MainText">A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut
             mollit anim id est laborum. Sedut perspiciatis unde omnis.
 
             <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
@@ -89,9 +84,9 @@
                 sed do eiusmod tempor incididunt ut labore et laborused.
             </div>
         </div>
-    </div>
+    </article>
 
-    <div class="ourProgress">
+    <article class="ourProgress__fraction">
         <div class="ourProgress__text">
             <div class="title">OUR PROGRESS</div>
             <h3>Great Application Ever</h3>
@@ -103,117 +98,345 @@
         </div>
 
         <div class="ourProgress__phone">
-            <img src="iphone-160307__480.png">
+            <img src="img/iphone.png">
         </div>
-        <div class="p">
-            <img src="pexels-photo-583846.jpg">
+        <div class="desk-photo">
+            <img src="img/desk.jpg">
         </div>
-    </div>
+    </article>
+</section>
 
-
-    <div class="videoFeatures">
-        <div class="videoFeatures__text">
-            <div class="title">VIDEO FEATURES</div>
-            <h3>Great Application Ever</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
-                laborused sed do eiusmod tempor incididunt ut labore et laborused.
-            </div>
-
-            <button>LEARN MORE</button>
-        </div>
-
-        <div class="videoFeatures-photo">
-            <img src="office-1209640__480.jpg">
-        </div>
-        <iframe src="https://www.youtube.com/embed/jF8e-3KgdsU" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
-</article>
-
-
-<article class="features">
-    <div class="features__section">
+<section class="features">
+    <article class="features__fraction">
         <div class="title">FEATURES</div>
         <h3>Powerful Features As Always</h3>
 
-        <div class="q">
-            <div class="single">
+        <div class="allFeatures">
+            <div class="allFeatures-single">
                 <div><i class="fas fa-rocket"></i></div>
-                <span>sdcfvgbhgvfd</span>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
 
-            <div class="single">
-                <div><i class="fas fa-rocket"></i></div>
-                <span>sdcfvgbhgvfd</span>
+            <div class="allFeatures-single">
+                <div><i class="fas fa-paperclip"></i></div>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
 
-            <div class="single">
-                <div><i class="fas fa-rocket"></i></div>
-                <span>sdcfvgbhgvfd</span>
+            <div class="allFeatures-single">
+                <div><i class="fas fa-cloud-download-alt"></i></div>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
 
 
-            <div class="u">
-                <img src="iphone-160307__480.png">
+            <div class="allFeatures-phone">
+                <img src="img/iphone.png">
             </div>
 
-            <div class="single">
+            <div class="allFeatures-single">
                 <div><i class="far fa-clock"></i></div>
-                <span>sdcfvgbhgvfd</span>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
 
-            <div class="single">
-                <div><i class="fas fa-rocket"></i></div>
-                <span>sdcfvgbhgvfd</span>
+            <div class="allFeatures-single">
+                <div><i class="fas fa-tablet-alt"></i></div>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
 
-            <div class="single">
-                <div><i class="fas fa-rocket"></i></div>
-                <span>sdcfvgbhgvfd</span>
+            <div class="allFeatures-single">
+                <div><i class="fas fa-cog"></i></div>
+                <span><strong>Fast & Powerful</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
             </div>
         </div>
-    </div>
+    </article>
 
+    <article class="features__testimonials">
+        <div class="title">TESTIMONIALS</div>
+        <h3>Our Client Loves US</h3>
 
-</article>
+        <div class="reviews">
+            <div class="reviews-box">
+                <div class="review-single">
+                    <div><img src="img/desk.jpg"></div>
+                    <h4>Ashekur Rahman</h4>
+                    <i>Art Director</i>
+                    <div>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.
+                    </div>
+                </div>
 
--->
+                <div class="review-single">
+                    <div><img src="img/desk.jpg"></div>
+                    <h4>Ashekur Rahman</h4>
+                    <i>Art Director</i>
+                    <div>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.
+                    </div>
+                </div>
 
+                <div class="review-single">
+                    <div><img src="img/desk.jpg"></div>
+                    <h4>Ashekur Rahman</h4>
+                    <i>Art Director</i>
+                    <div>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="prev"><</button>
+        <button class="next">></button>
+    </article>
+</section>
+
+<section class="pricing" id="pricing">
+    <article class="pricing__fraction">
+        <div class="title">PRICING PLAN</div>
+        <h3>Our Awesome Pricing Plan</h3>
+
+        <div class="pricingPlan">
+            <div class="pricingPlan_single">
+                <div class="single-main">
+                    <i class="fas fa-rocket"></i>
+                    <h6>FREE</h6>
+                </div>
+
+                <div class="single-info">
+                    Easy Installations
+                    Unlimited support
+                    Uniqe Elements
+
+                    <div class="price"><sup>$</sup>0<sub>/Month</sub></div>
+                    <button class="purchase" type="button">PURCHASE</button>
+
+                </div>
+            </div>
+            <div class="pricingPlan_single">
+                <div class="single-main">
+                    <i class="fas fa-gem"></i>
+                    <h6>MEDIUM</h6>
+                </div>
+
+                <div class="single-info">
+                    Easy Installations
+                    Unlimited support
+                    Uniqe Elements
+
+                    <div class="price"><sup>$</sup>49<sub>/Month</sub></div>
+
+                    <button class="purchase">PURCHASE</button>
+                </div>
+            </div>
+            <div class="pricingPlan_single">
+                <div class="single-main">
+                    <i class="fas fa-rocket"></i>
+                    <h6>BUSINESS</h6>
+                </div>
+
+                <div class="single-info">
+                    Easy Installations
+                    Unlimited support
+                    Uniqe Elements
+
+                    <div class="price"><sup>$</sup>99<sub>/Month</sub></div>
+
+                    <button class="purchase">PURCHASE</button>
+
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section class="faq" id="faq">
+    <article class="faq__fraction">
+        <div class="title">FAQ</div>
+        <h3>Frequently Asked Questions</h3>
+
+        <div class="questions">
+            <div class="questions__part onePart">
+                <div class="questions-single">
+                    <span class="open on">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions__part twoPart">
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open on">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+                <div class="questions-single">
+                    <span class="open">+</span>
+                    <h5>Faq firs question goes here?</h5>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="subscribe__fraction">
+        <div class="subscribe-details">
+            <h5>Subscribe for More Features</h5>
+            <input placeholder="Enter your email">
+            <button>SUBSCRIBE</button>
+        </div>
+    </article>
+
+</section>
+
+<section class="contact" id="contacts">
+    <article class="contact__fraction">
+        <div class="title">CONTACT US</div>
+        <h3>Our Awesome Pricing Plan</h3>
+
+        <div class="contacts">
+            <div class="contacts-single">
+                <div class="contacts-single-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">8-54 Paya Lebar Square <br/>
+                    60 Paya Lebar Roa SG, Singapore
+                </div>
+            </div>
+            <div class="contacts-single">
+                <div class="contacts-single-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="text">+65 93901336 <br/>
+                    +65 93901337
+                </div>
+            </div>
+            <div class="contacts-single">
+                <div class="contacts-single-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text">yourmail@gmail.com <br/>
+                    backpiper.com@gmail.com
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<footer>
+    <div>Copyright ©2021 All rights reserved | This template is made with by Colorlib</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
-
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script>
     window.sr = ScrollReveal();
-    sr.reveal('.aboutPage', {
+    sr.reveal('.ourProgress__text div', {
         reset: true,
         delay: 300,
-        distance: 0
+        origin: 'top',
+        distance: '50px'
     });
-    sr.reveal('.ourProgress', {
+
+    sr.reveal('.videoFeatures__text div', {
         reset: true,
         delay: 300,
-        scale: 0.85
+        origin: 'top',
+        distance: '50px'
     });
-    sr.reveal('.videoFeatures', {
+    sr.reveal('.allFeatures-single', {
         reset: true,
         delay: 300,
-        rotate: {
-            x: 20,
-            z: 20
-        }
+        origin: 'top',
+        distance: '50px'
     });
-    sr.reveal('.features__section', {
+
+    sr.reveal('.about__MainText', {
         reset: true,
         delay: 300,
-        rotate: {
-            x: 40,
-            z: 40
-        }
+        origin: 'top',
+        distance: '50px'
     });
 </script>
+
 
 </body>
 </html>

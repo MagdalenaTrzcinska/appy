@@ -1,5 +1,7 @@
-@mixin logo-icon($display, $color, $bcg-color) {
+@mixin logo-icon($height, $display, $color, $bcg-color) {
   .logo-icon {
+    height: $height;
+    line-height: $height - 5px;
     display: $display;
     color: $color;
     background-color: $bcg-color;
@@ -15,7 +17,7 @@
   }
 }
 
-@mixin header($width) {
+@mixin header($width, $before: false, $after: false) {
   .title {
     width: $width;
     display: inline-block;
@@ -24,6 +26,32 @@
     color: #878787;
     font-weight: bolder;
     letter-spacing: 1px;
+
+    @if $before {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        height: 1px;
+        width: 40px;
+        background-color: #c3c3c3;
+        border-radius: 50%;
+        left: -50px;
+      }
+    }
+
+    @if $after {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        height: 1px;
+        width: 40px;
+        background-color: #c3c3c3;
+        border-radius: 50%;
+        right: -50px;
+      }
+    }
   }
 }
 

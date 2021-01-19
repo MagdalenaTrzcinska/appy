@@ -1,0 +1,139 @@
+.faq {
+  .faq__fraction {
+    height: 60vh;
+    background-color: #edecf4;
+    @media #{$smallWidth} {
+      height: 90vh;
+    }
+
+    @include header(25px, true, true);
+
+    .title {
+      margin-top: 5%;
+      left: calc(50% - 15px);
+    }
+
+    @include styleH;
+
+    h3 {
+      text-align: center;
+      color: black;
+    }
+
+    .questions {
+      width: 1100px;
+      margin: 0 auto;
+
+      @media #{$theLargerWidth} {
+        width: 80%;
+      }
+
+      @media #{$smallWidth} {
+        height: 80vh;
+        width: 96%;
+      }
+
+      .questions__part {
+        width: 50%;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media #{$smallWidth} {
+          width: 100%;
+        }
+
+        .questions-single {
+          margin: 5px 0;
+          width: 98%;
+          color: black;
+          overflow: hidden;
+          background-color: white;
+          position: relative;
+
+
+          &:before {
+            content: "";
+            width: 4px;
+            height: 100%;
+            background-color: #{$lighter-color};
+            position: absolute;
+          }
+
+          @media #{$smallWidth} {
+            width: 100%;
+            overflow: hidden;
+          }
+
+          span.open {
+            width: 30px;
+            cursor: pointer;
+            z-index: 2;
+            position: absolute;
+            left: 10px;
+            margin-top: 15px;
+            font-size: 20px;
+          }
+
+          h5 {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            margin: 0 0 0 20px;
+            font-size: 20px;
+          }
+
+          div {
+            margin: 0 20px;
+            height: 0;
+            transition-duration: 0.2s;
+          }
+
+          .open.on ~ div {
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe__fraction {
+    background-color: #{$lighter-color};
+    height: 35vh;
+    position: relative;
+
+    .subscribe-details {
+      position: absolute;
+      height: 66%;
+      width: 50%;
+      left: 25%;
+      top: 17%;
+      background-color: white;
+      text-align: center;
+      @media #{$smallWidth} {
+        width: 500px;
+        left: calc(50% - 250px);
+      }
+
+      h5 {
+        color: #{$lighter-color};
+        font-size: 23px;
+        margin-top: 15px;
+      }
+
+      input {
+        width: calc(90% - 60px);
+        height: 42px;
+        border-radius: 40px;
+        padding: 5px 30px;
+        border: 1px solid #{$lighter-color};
+        outline: none;
+        color: #{$lighter-color};
+      }
+
+      @include button;
+    }
+  }
+
+}
+
