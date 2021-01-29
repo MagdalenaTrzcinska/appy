@@ -133,7 +133,7 @@ ul li {
   border: 1px solid white;
 }
 .home .menu .menu-mobile .bars.on + ul {
-  height: 400px;
+  height: 200px;
 }
 .home .menu .menu-mobile .bars.on + ul > li {
   opacity: 1;
@@ -261,6 +261,9 @@ ul li {
   background-image: linear-gradient(-135deg, #4781e6, #1b14a6);
 }
 
+.about {
+  margin-bottom: 80px;
+}
 .about__fraction {
   height: 60vh;
   color: black;

@@ -1,4 +1,5 @@
 export class Aminations {
+
     left = 0;
     prev = document.querySelector('.prev');
     next = document.querySelector('.next');
@@ -7,7 +8,8 @@ export class Aminations {
     position = 0;
     flag = false;
 
-    constructor() {}
+    constructor() {
+    }
 
     render() {
         this.startBtn();
@@ -55,12 +57,12 @@ export class Aminations {
     }
 
     startEventMouse() {
-        this.square.addEventListener("mousedown", event  => {
+        this.square.addEventListener("mousedown", event => {
             this.position = event.clientX;
             this.flag = true;
         });
 
-        this.square.addEventListener("mousemove", event  => {
+        this.square.addEventListener("mousemove", event => {
             if (this.flag === true) {
                 this.left = event.clientX - this.position;
                 document.querySelectorAll(".review-single").forEach(x => {
@@ -69,7 +71,7 @@ export class Aminations {
             }
         });
 
-        this.square.addEventListener("mouseup", event  => {
+        this.square.addEventListener("mouseup", event => {
             if (this.flag === true) {
                 this.left = event.clientX - this.position;
                 document.querySelectorAll(".review-single").forEach(x => {
@@ -80,6 +82,7 @@ export class Aminations {
         });
     }
 }
+
 
 
 

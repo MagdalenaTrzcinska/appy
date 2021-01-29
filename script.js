@@ -1,37 +1,12 @@
 import {Aminations} from "./Aminations.js";
 
-
-const scrollToTop = document.querySelector(".up");
 const bars = document.querySelector(".bars");
 const faqOnePart = document.querySelectorAll(".onePart .open");
 const faqTwoPart = document.querySelectorAll(".twoPart .open");
-const li = document.querySelectorAll(".navigation li");
 
-const scrollSizeRange = [ // 0 - 5 - for Desktop, 6 - 11 - for Mobile
-    0,
-    700,
-    2710,
-    4610,
-    5710,
-    6300,
-    0,
-    500,
-    1710,
-    3700,
-    6000,
-    7500
-];
 
 const testiAnimations = new Aminations();
 testiAnimations.render();
-
-scrollToTop.addEventListener("click", () => {
-    window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
-});
 
 window.addEventListener("scroll", function (event) {
     const style1 = document.querySelector(".menu");
@@ -42,18 +17,12 @@ window.addEventListener("scroll", function (event) {
             style1.style.background = "transparent";
         }
     }
-    if (window.scrollY > 100) {
-        scrollToTop.style.display = "block";
-    } else {
-        scrollToTop.style.display = "none";
-    }
 });
 
 bars.addEventListener("click", () => {
     bars.classList.toggle("on");
 });
 
-///////////
 faqOnePart.forEach(b => b.addEventListener('click', openingFaq));
 faqTwoPart.forEach(b => b.addEventListener('click', openingFaq));
 
@@ -77,100 +46,44 @@ function openingFaq(e) {
     }
 }
 
-////////
-li.forEach((x, index) => {
-    x.addEventListener("click", () => {
-        window.scroll({
-            top: scrollSizeRange[index],
-            left: 0,
-            behavior: 'smooth'
-        });
-    });
+window.sr = ScrollReveal();
+sr.reveal('.ourProgress__text div', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
 });
 
-window.addEventListener("scroll", () => {
-    if (window.outerWidth > 800) {
-        if (window.scrollY > scrollSizeRange[0]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[0].classList.add("active");
-        }
+sr.reveal('.videoFeatures__text div', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
+});
+sr.reveal('.allFeatures-single', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
+});
 
-        if (window.scrollY > scrollSizeRange[1]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[1].classList.add("active");
-        }
+sr.reveal('.about__MainText', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
+});
 
-        if (window.scrollY > scrollSizeRange[2]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[2].classList.add("active");
-        }
+sr.reveal('.faq .questions', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
+});
 
-        if (window.scrollY > scrollSizeRange[3]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[3].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[4]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[4].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[5]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[5].classList.add("active");
-        }
-    } if(window.outerWidth < 800) {
-        if (window.scrollY > scrollSizeRange[6]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[6].classList.add("active");
-        }
-        if (window.scrollY > scrollSizeRange[7]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[7].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[8]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[8].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[9]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[9].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[10]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[10].classList.add("active");
-        }
-
-        if (window.scrollY > scrollSizeRange[11]) {
-            li.forEach((l) => {
-                l.classList.remove("active");
-            });
-            li[11].classList.add("active");
-        }
-    }
+sr.reveal('.contact__fraction .contacts', {
+    reset: true,
+    delay: 300,
+    origin: 'top',
+    distance: '50px'
 });
