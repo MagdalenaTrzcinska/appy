@@ -1,15 +1,12 @@
 import {Aminations} from "./Aminations.js";
 
 const bars = document.querySelector(".bars");
-
-
 const testiAnimations = new Aminations();
 testiAnimations.render();
 
 bars.addEventListener("click", () => {
     bars.classList.toggle("on");
 });
-
 
 window.addEventListener("scroll", function () {
     const style1 = document.querySelector(".menu");
