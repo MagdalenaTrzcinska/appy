@@ -1,8 +1,4 @@
-import {Aminations} from "./Aminations.js";
-
 const bars = document.querySelector(".bars");
-const testiAnimations = new Aminations();
-testiAnimations.render();
 
 bars.addEventListener("click", () => {
     bars.classList.toggle("on");
