@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @import "styles/base/base.scss";
+@import "styles/base/colors.scss";
 
 @import "styles/abstracts/mixins.scss";
 @import "styles/abstracts/variables.scss";
@@ -15,3 +16,6 @@
 @import "styles/pages/pricing.scss";
 @import "styles/pages/faq.scss";
 @import "styles/pages/contacts.scss";
+
+
+@import "node_modules/sass-autoprefixer/scss/prefixes";
