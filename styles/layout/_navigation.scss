@@ -1,28 +1,26 @@
 .home {
   .menu {
     position: fixed;
-    top: 0;
     width: 95%;
+    height: 6rem;
+    line-height: 4rem;
+    top: 0;
     z-index: 5;
-    height: 60px;
-    line-height: 60px;
-    padding-left: 3%;
-    padding-right: 2%;
+    padding: 0 2% 0 3%;
     @media #{$smallWidth} {
       background: linear-gradient(#{$lighter-color}, #{$darker-color});
     }
 
     &__logo {
       float: left;
-      width: 150px;
+      width: 15rem;
       font-size: 3rem;
       font-family: 'Mulish', sans-serif;
       @include logo-icon(40px, inline-block, #{$lighter-colorWithOpacity}, white);
-
       .logo-icon {
-        padding: 0 12px;
+        padding: 0 1.2rem;
         border-radius: 15px;
-        margin-top: 10px;
+        margin-top: 1rem;
       }
     }
 
@@ -36,42 +34,41 @@
       .navigation {
         float: left;
         padding: 0;
-        width: calc(100% - 150px - 150px);
-        margin-top: 5px;
+        width: calc(100% - 30rem);
         text-align: center;
         font-size: 1.5rem;
 
         .navigation__item {
           position: relative;
-          padding: 0 10px;
+          padding: 0 1rem;
 
           &:hover::after {
             content: "";
             width: 100%;
-            height: 2px;
+            height: 0.2rem;
             background-color: white;
             position: absolute;
-            bottom: 10px;
+            bottom: 5px;
             left: 0;
           }
         }
         .active::after {
           content: "";
           width: 100%;
-          height: 2px;
+          height: 0.2rem;
           background-color: white;
           position: absolute;
-          bottom: 10px;
+          bottom: 5px;
           left: 0;
         }
       }
 
       .signUp {
-        width: 150px;
-        line-height: 50px;
-        height: 50px;
+        width: 15rem;
+        line-height: 5rem;
+        height: 5rem;
         float: right;
-        margin-top: 5px;
+        margin-top: 0.5rem;
         border-radius: 30px;
         border: none;
         outline: none;
@@ -95,18 +92,19 @@
 
       .bars {
         float: right;
-        font-size: 20px;
-        line-height: 30px;
-        height: 30px;
-        width: 45px;
-        margin-top: calc((60px - 30px) / 2);
+        font-size: 2rem;
+        line-height: 3rem;
+        height: 3rem;
+        width: 4.5rem;
+        margin-top: calc((6rem - 3rem) / 2);
         text-align: center;
         border: 1px solid white;
+        cursor: pointer;
       }
 
       .bars.on + ul {
-        height: 200px;
-
+        height: 20rem;
+        padding-top: 1.5rem;
       }
 
       .navigation {
@@ -124,11 +122,11 @@
         &__item {
           position: relative;
           list-style-type: none;
-          height: 50px;
+          height: 5rem;
           width: 98%;
           margin: 0 1%;
-          line-height: 50px;
-          font-size: 15px;
+          line-height: 5rem;
+          font-size: 1.5rem;
 
           &:hover,
           &.active {

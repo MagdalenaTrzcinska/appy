@@ -2,8 +2,9 @@
   .features__fraction {
     margin-top: 15%;
     background-color: #6c9cfb;
+    font-size: 1.5rem;
 
-    @include header(73px, true, true);
+    @include header(true, true);
     @include styleH;
 
     .title {
@@ -17,8 +18,8 @@
     }
 
     .allFeatures {
-      margin-left: 18%;
-      margin-right: 18%;
+      margin-left: 10%;
+      margin-right: 10%;
       height: 57vh;
       display: grid;
       grid-template-columns: 1.5fr 1.5fr 1.5fr;
@@ -115,7 +116,7 @@
   .features__testimonials {
     margin-top: 10%;
 
-    @include header(120px, $before: true, $after: true);
+    @include header($before: true, $after: true);
     @include styleH;
 
     .title {

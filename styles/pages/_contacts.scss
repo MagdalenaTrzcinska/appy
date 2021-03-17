@@ -1,11 +1,10 @@
 @include styleH;
 
 .contact {
-  @include header(100px, true, true);
-
+  @include header(true, true);
   .title {
     margin-top: 10%;
-    left: calc(50% - 37px);
+    left: calc(50% - 3.7rem);
   }
 
   h3 {
@@ -17,7 +16,7 @@
     display: flex;
     height: 20vh;
     margin: 7% auto;
-    max-width: 1150px;
+    max-width: 115rem;
     align-items: center;
     width: 90%;
     justify-content: space-between;
@@ -28,12 +27,12 @@
     }
 
     &-single {
-      width: 250px;
-      padding: 40px 0;
+      width: 25rem;
+      padding: 4rem 0;
 
       &-icon {
-        width: 80px;
-        height: 80px;
+        width: 8rem;
+        height: 8rem;
         margin: 0 auto;
         text-align: center;
         background: linear-gradient(-135deg, #{$lighter-colorWithOpacity}, #{$darker-color});
@@ -72,18 +71,19 @@
         }
 
         i {
-          font-size: 20px;
-          padding-top: 30px;
+          font-size: 2rem;
+          padding-top: 3rem;
           transition: .5s linear;
         }
       }
     }
 
     div.text {
-      margin-top: 40px;
+      margin-top: 4rem;
       text-align: center;
       color: gray;
       line-height: 2;
+      font-size: 1.6rem;
     }
   }
 }

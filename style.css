@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,13 +26,12 @@ ul li {
 
 .home .menu {
   position: fixed;
-  top: 0;
   width: 95%;
+  height: 6rem;
+  line-height: 4rem;
+  top: 0;
   z-index: 5;
-  height: 60px;
-  line-height: 60px;
-  padding-left: 3%;
-  padding-right: 2%;
+  padding: 0 2% 0 3%;
 }
 @media (max-width: 800px) {
   .home .menu {
@@ -37,8 +40,8 @@ ul li {
 }
 .home .menu__logo {
   float: left;
-  width: 150px;
-  font-size: 40px;
+  width: 15rem;
+  font-size: 3rem;
   font-family: "Mulish", sans-serif;
 }
 .home .menu__logo .logo-icon {
@@ -52,9 +55,9 @@ ul li {
   font-size: 40px;
 }
 .home .menu__logo .logo-icon {
-  padding: 0 12px;
+  padding: 0 1.2rem;
   border-radius: 15px;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .home .menu .menu-desktop {
   z-index: 2;
@@ -68,39 +71,38 @@ ul li {
 .home .menu .menu-desktop .navigation {
   float: left;
   padding: 0;
-  width: calc(100% - 150px - 150px);
-  margin-top: 5px;
+  width: calc(100% - 30rem);
   text-align: center;
-  font-size: 16px
+  font-size: 1.5rem;
 }
 .home .menu .menu-desktop .navigation .navigation__item {
   position: relative;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 .home .menu .menu-desktop .navigation .navigation__item:hover::after {
   content: "";
   width: 100%;
-  height: 2px;
+  height: 0.2rem;
   background-color: white;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
 }
 .home .menu .menu-desktop .navigation .active::after {
   content: "";
   width: 100%;
-  height: 2px;
+  height: 0.2rem;
   background-color: white;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
 }
 .home .menu .menu-desktop .signUp {
-  width: 150px;
-  line-height: 50px;
-  height: 50px;
+  width: 15rem;
+  line-height: 5rem;
+  height: 5rem;
   float: right;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -124,16 +126,18 @@ ul li {
 }
 .home .menu .menu-mobile .bars {
   float: right;
-  font-size: 20px;
-  line-height: 30px;
-  height: 30px;
-  width: 45px;
-  margin-top: calc((60px - 30px) / 2);
+  font-size: 2rem;
+  line-height: 3rem;
+  height: 3rem;
+  width: 4.5rem;
+  margin-top: calc((6rem - 3rem) / 2);
   text-align: center;
   border: 1px solid white;
+  cursor: pointer;
 }
 .home .menu .menu-mobile .bars.on + ul {
-  height: 200px;
+  height: 20rem;
+  padding-top: 1.5rem;
 }
 .home .menu .menu-mobile .navigation {
   height: 0;
@@ -150,11 +154,11 @@ ul li {
 .home .menu .menu-mobile .navigation__item {
   position: relative;
   list-style-type: none;
-  height: 50px;
+  height: 5rem;
   width: 98%;
   margin: 0 1%;
-  line-height: 50px;
-  font-size: 15px;
+  line-height: 5rem;
+  font-size: 1.5rem;
 }
 .home .menu .menu-mobile .navigation__item:hover, .home .menu .menu-mobile .navigation__item.active {
   background-color: white;
@@ -223,23 +227,23 @@ ul li {
   }
 }
 .home .home__banner-text h1 {
-  font-size: 60px;
+  font-size: 5rem;
   padding: 0;
   margin: 0;
 }
 @media (max-width: 800px) {
   .home .home__banner-text h1 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 .home .home__banner-text div {
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 30px;
   margin: 3% 0;
 }
 @media (max-width: 800px) {
   .home .home__banner-text div {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 .home .home__banner-text button {
@@ -260,7 +264,7 @@ ul li {
 }
 
 .about {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 .about__fraction {
   height: 60vh;
@@ -279,9 +283,9 @@ ul li {
 }
 .about__fraction .logo-icon {
   position: relative;
-  left: calc(50% - 25px);
-  width: 14px;
-  padding: 0 18px;
+  left: calc(50% - 2.5rem);
+  width: 1.4rem;
+  padding: 0 1.8rem;
   border-radius: 40%;
   background: linear-gradient(-140deg, rgba(19, 86, 230, 0.6), rgba(21, 16, 109, 0.6));
 }
@@ -315,14 +319,14 @@ ul li {
 }
 .about__fraction .title {
   margin-top: 2%;
-  left: calc(50% - 44px);
+  left: calc(50% - 4.4rem);
 }
 .about__fraction .about__MainText {
   text-align: center;
   margin-top: 5%;
   width: 60%;
   margin-left: 20%;
-  font-size: 34px;
+  font-size: 3.4rem;
   color: #4781e6;
   font-weight: bolder;
 }
@@ -336,7 +340,7 @@ ul li {
   word-spacing: 2px;
   margin-top: 2%;
   color: gray;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 2;
 }
 .about .ourProgress__fraction {
@@ -410,7 +414,7 @@ ul li {
   display: block;
   position: absolute;
   height: 70vh;
-  min-height: 500px;
+  min-height: 50rem;
   right: 25%;
   top: -10vh;
   opacity: 0.8;
@@ -449,6 +453,7 @@ ul li {
 .features .features__fraction {
   margin-top: 15%;
   background-color: #6c9cfb;
+  font-size: 1.5rem;
 }
 .features .features__fraction .title {
   display: inline-block;
@@ -490,8 +495,8 @@ ul li {
   text-align: center;
 }
 .features .features__fraction .allFeatures {
-  margin-left: 18%;
-  margin-right: 18%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 57vh;
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1.5fr;
@@ -752,7 +757,7 @@ h3 {
 }
 .pricing .pricing__fraction .pricingPlan {
   display: flex;
-  height: 55vh;
+  height: 53vh;
   margin: 7% auto;
   width: 60%;
   max-width: 1150px;
@@ -774,8 +779,9 @@ h3 {
 .pricing .pricing__fraction .pricingPlan_single {
   width: 31%;
   height: 100%;
-  -webkit-box-shadow: 0px 0px 28px 4px rgba(112, 105, 114, 0.41);
-  box-shadow: 0px 0px 28px 4px rgba(112, 105, 114, 0.41);
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0 0 28px 4px rgba(112, 105, 114, 0.41);
+  box-shadow: 0 0 28px 4px rgba(112, 105, 114, 0.41);
 }
 @media (max-width: 800px) {
   .pricing .pricing__fraction .pricingPlan_single {
@@ -784,8 +790,8 @@ h3 {
   }
 }
 .pricing .pricing__fraction .pricingPlan_single:hover {
-  -webkit-box-shadow: 0px 0px 20px 5px rgba(90, 129, 191, 0.81);
-  box-shadow: 0px 0px 20px 5px rgba(90, 129, 191, 0.81);
+  -webkit-box-shadow: 0 0 20px 5px rgba(90, 129, 191, 0.81);
+  box-shadow: 0 0 20px 5px rgba(90, 129, 191, 0.81);
 }
 .pricing .pricing__fraction .pricingPlan_single:hover .single-main {
   background: linear-gradient(45deg, #41265b, #2e32ad, #6f9bef);
@@ -806,7 +812,7 @@ h3 {
 .pricing .pricing__fraction .pricingPlan_single .single-main i {
   position: absolute;
   left: 50%;
-  top: calc(50% - 30px);
+  top: calc(50% - 3rem);
   transform: translate(-50%, -50%);
   font-size: 60px;
   color: rgba(19, 86, 230, 0.9);
@@ -815,10 +821,10 @@ h3 {
 .pricing .pricing__fraction .pricingPlan_single .single-main h6 {
   margin: 0;
   padding: 0;
-  font-size: 22px;
+  font-size: 2.2rem;
   position: absolute;
   left: 50%;
-  top: calc(50% + 30px);
+  top: calc(50% + 3rem);
   transform: translate(-50%, -50%);
   color: rgba(19, 86, 230, 0.9);
   transition: 0.3s linear;
@@ -826,28 +832,28 @@ h3 {
 .pricing .pricing__fraction .pricingPlan_single .single-info {
   text-align: center;
   color: gray;
-  width: 170px;
-  margin-top: 40px;
-  margin-left: calc((100% - 170px) /2);
+  width: 17rem;
+  margin-top: 4rem;
+  margin-left: calc((100% - 17rem) /2);
   line-height: 2;
 }
 .pricing .pricing__fraction .pricingPlan_single .single-info .price {
   color: rgba(19, 86, 230, 0.9);
-  font-size: 60px;
+  font-size: 6rem;
 }
 .pricing .pricing__fraction .pricingPlan_single .single-info .price sup {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .pricing .pricing__fraction .pricingPlan_single .single-info .price sub {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .pricing .pricing__fraction .pricingPlan_single .single-info button.purchase {
-  margin-top: 20px;
+  margin-top: 2rem;
   border-radius: 30px;
   letter-spacing: 1px;
-  font-size: 13px;
-  width: 180px;
-  height: 60px;
+  font-size: 1.3rem;
+  width: 18rem;
+  height: 6rem;
   font-weight: bolder;
   color: rgba(19, 86, 230, 0.9);
   border: solid 2px transparent;
@@ -901,7 +907,7 @@ h3 {
 }
 .faq .faq__fraction .title {
   margin-top: 5%;
-  left: calc(50% - 15px);
+  left: calc(50% - 1.5rem);
 }
 .faq .faq__fraction h3 {
   font-size: 30px;
@@ -911,7 +917,7 @@ h3 {
   color: black;
 }
 .faq .faq__fraction .questions {
-  width: 1100px;
+  width: 110rem;
   margin: 0 auto;
 }
 @media (max-width: 1200px) {
@@ -938,7 +944,7 @@ h3 {
   }
 }
 .faq .faq__fraction .questions .questions__part .questions-single {
-  margin: 5px 0;
+  margin: 0.5rem 0;
   width: 98%;
   color: black;
   overflow: hidden;
@@ -947,7 +953,7 @@ h3 {
 }
 .faq .faq__fraction .questions .questions__part .questions-single:before {
   content: "";
-  width: 4px;
+  width: 0.4rem;
   height: 100%;
   background-color: rgba(19, 86, 230, 0.9);
   position: absolute;
@@ -959,28 +965,28 @@ h3 {
   }
 }
 .faq .faq__fraction .questions .questions__part .questions-single span.open {
-  width: 30px;
+  width: 3rem;
   cursor: pointer;
   z-index: 2;
   position: absolute;
   left: 10px;
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 1.5rem;
+  font-size: 2rem;
 }
 .faq .faq__fraction .questions .questions__part .questions-single h5 {
   background-color: white;
   color: black;
-  padding: 15px;
-  margin: 0 0 0 20px;
-  font-size: 20px;
+  padding: 1.5rem;
+  margin: 0 0 0 2rem;
+  font-size: 2rem;
 }
 .faq .faq__fraction .questions .questions__part .questions-single div {
-  margin: 0 20px;
+  margin: 0 2rem;
   height: 0;
   transition-duration: 0.2s;
 }
 .faq .faq__fraction .questions .questions__part .questions-single .open.on ~ div {
-  height: 100px;
+  height: 10rem;
 }
 .faq .subscribe__fraction {
   background-color: rgba(19, 86, 230, 0.9);
@@ -999,19 +1005,19 @@ h3 {
 @media (max-width: 800px) {
   .faq .subscribe__fraction .subscribe-details {
     width: 500px;
-    left: calc(50% - 250px);
+    left: calc(50% - 25rem);
   }
 }
 .faq .subscribe__fraction .subscribe-details h5 {
   color: rgba(19, 86, 230, 0.9);
-  font-size: 23px;
-  margin-top: 15px;
+  font-size: 2.3rem;
+  margin-top: 1.5rem;
 }
 .faq .subscribe__fraction .subscribe-details input {
-  width: calc(90% - 60px);
-  height: 42px;
+  width: calc(90% - 6rem);
+  height: 4.2rem;
   border-radius: 40px;
-  padding: 5px 30px;
+  padding: 0.5rem 3rem;
   border: 1px solid rgba(19, 86, 230, 0.9);
   outline: none;
   color: rgba(19, 86, 230, 0.9);
@@ -1072,7 +1078,7 @@ h3 {
 }
 .contact .title {
   margin-top: 10%;
-  left: calc(50% - 37px);
+  left: calc(50% - 3.7rem);
 }
 .contact h3 {
   text-align: center;
@@ -1082,7 +1088,7 @@ h3 {
   display: flex;
   height: 20vh;
   margin: 7% auto;
-  max-width: 1150px;
+  max-width: 115rem;
   align-items: center;
   width: 90%;
   justify-content: space-between;
@@ -1094,12 +1100,12 @@ h3 {
   }
 }
 .contact .contacts-single {
-  width: 250px;
-  padding: 40px 0;
+  width: 25rem;
+  padding: 4rem 0;
 }
 .contact .contacts-single-icon {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   margin: 0 auto;
   text-align: center;
   background: linear-gradient(-135deg, rgba(19, 86, 230, 0.6), rgba(21, 16, 109, 0.9));
@@ -1140,15 +1146,16 @@ h3 {
   color: rgba(19, 86, 230, 0.9);
 }
 .contact .contacts-single-icon i {
-  font-size: 20px;
-  padding-top: 30px;
+  font-size: 2rem;
+  padding-top: 3rem;
   transition: 0.5s linear;
 }
 .contact .contacts div.text {
-  margin-top: 40px;
+  margin-top: 4rem;
   text-align: center;
   color: gray;
   line-height: 2;
+  font-size: 1.6rem;
 }
 
 /*

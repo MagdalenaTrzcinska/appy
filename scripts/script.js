@@ -56,3 +56,13 @@ sr.reveal('.contact__fraction .contacts', {
     origin: 'top',
     distance: '50px'
 });
+
+
+
+fetch("./banner.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#a").innerHTML = data;
+    });

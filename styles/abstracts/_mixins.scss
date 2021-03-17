@@ -17,7 +17,7 @@
   }
 }
 
-@mixin header($width, $before: false, $after: false) {
+@mixin header($before: false, $after: false) {
   .title {
     display: inline-block;
     position: relative;
